@@ -3,7 +3,7 @@ import pygame as pg
 import random
 from os import path 
 
-img_dir = path.join(path.dirname(__file__), 'img')
+img_dir = path.join(path.dirname(__file__), 'img') # Directory to get images
 
 WIDTH = 480 # Width of canvas
 HEIGHT = 600 # Height of canvas
@@ -27,7 +27,7 @@ clock = pg.time.Clock()
 class Player(pg.sprite.Sprite):
     def __init__(self):
         pg.sprite.Sprite.__init__(self)
-        self.image = pg.transform.scale(player_img, (70, 58))
+        self.image = pg.transform.scale(player_img, (70, 58)) # Player image loading and transforming to scale
         self.image.set_colorkey(BLACK)
         self.rect = self.image.get_rect()
         self.radius = 30
@@ -133,6 +133,9 @@ for i in range(8):
     mobs.add(m)
 
 # Game Loop
+#   1) Events
+#   2) Update
+#   3) Draw
 running = True
 while running:
     clock.tick(FPS) # Keep game at right speed
@@ -142,7 +145,7 @@ while running:
         # Check for closed window
         if event.type == pg.QUIT:
             running = False
-        elif event.type == pg.KEYDOWN:
+        elif event.type == pg.KEYDOWN: # elif = else if
             if event.key == pg.K_SPACE:
                 player.shoot() 
 
