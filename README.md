@@ -14,7 +14,7 @@ To install Pygame with pip, run the following command in the **```cmd prompt```*
 > pip install pygame
 
 # Sponsorship
-This course is ran, branded and sponsored by [Talhatraining](https://talhatraining.com/). 
+This course is ran, branded and sponsored by @Talha-Training. 
 ![TalhaTraining](https://talhatraining.com/wp-content/uploads/2022/06/talhatraining-350-100.png)
 
 - [x] Basic code done
